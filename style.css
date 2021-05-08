@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+h1{
+  color: #24226c;
+  font-size: 20pt;
+  font: small-caps bold 24px/1 sans-serif;
+}
+
+
+h2{
+  color: #24226c;
+  font-size: 20pt;
+}
+
+.sho_omega_theta{
+    color: #2e38c1;
+    font-size: 20pt;
+}
+
+.output1{
+  font: caption;
+}
+.output2{
+  font: caption;
+}
+
+.sli[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #146ba4;
+  height: 5px;
+  width: 21%;
+  border-radius: 8px;
+
+  &:focus,
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    position: relative;
+    border: 2px solid rgba(0, 0, 0, .7);
+    width: 22px;
+    height: 22px;
+    display: block;
+    background-color: #146ba4;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+  }
+
+}

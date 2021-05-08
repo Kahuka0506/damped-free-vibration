@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Damped Free Vibration</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js">
+</script>
+<script type="text/javascript"
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" }},
+  tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+    processEscapes: true
+  },
+  "HTML-CSS": { matchFontHeight: false },
+  displayAlign: "left",
+  displayIndent: "2em"
+});
+</script>
+  </head>
+
+
+  <body>
+    <h1>Damped Free Vibration</h1>
+
+    <h2>$\frac{d^2x}{dt^2} + 2\zeta \omega \frac{dx}{dt} + \omega^2 x = 0$</h2>
+
+    <div class="sho_omega_theta">
+      <span>$\omega$ &thinsp; : </span>
+      <input type="range" class="sli" id="omega_slider" value="1" min="0" max="20" step="0.1" oninput="document.getElementById('output1').value=this.value">
+      <output id="output1">1.0</output>
+
+      <div></div>
+
+      <span>$\zeta$ &ensp; : </span>
+      <input type="range" class="sli" id="theta_slider" value="1" min="0" max="10" step="0.1" oninput="document.getElementById('output2').value=this.value">
+      <output id="output2">0.5</output>
+      <div></div>
+    </div>
+
+    <div style="position:absolute; left:10%; width:80%;">
+
+      <canvas id="line-chart1" style="position: relative; height:30; width:70"></canvas>
+
+    </div>
+
+
+
+  </body>
+
+
+  <script type="text/javascript" src="graph.js"></script>
+
+</html>
